@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MyViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *myLabel;
 
 @end

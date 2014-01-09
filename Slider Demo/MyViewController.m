@@ -19,6 +19,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)sliderChange:(id)sender {
+    UISlider *slider = (UISlider *)sender;
+    NSString *newValue;
+    
+    newValue = [NSString stringWithFormat:@"%f", slider.value];
+    
+    self.myLabel.text = newValue;
+}
 
 - (void)didReceiveMemoryWarning
 {
